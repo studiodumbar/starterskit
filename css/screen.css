@@ -39,6 +39,7 @@
  * @section			Miscellaneous style definitions
  */
 
+html { overflow-y: scroll; } /* Always force a scrollbar in non-IE (Double scrollbars occur in Opera <= 10.11alpha, if used along with height: 100% ) */
 hr { border: none; }
 :focus { outline: 0.2em solid blue; }
 img { margin-bottom: 1.4545em; }
@@ -374,7 +375,7 @@ p.full img { float: none; height: auto; margin: 0.4em 0 0 0; padding: 0; width: 
 #home .message_err h2,
 #home .message_info h2,
 .message_err h2,
-.message_info h2 { font-size: 1.3em; }
+.message_info h2 { font-size: 1.3em; margin-top: 0; }
 
 .message_err p,
 .message_info p { margin-bottom: 0.1em; }
